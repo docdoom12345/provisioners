@@ -41,7 +41,7 @@ resource "azurerm_linux_virtual_machine" "example" {
   connection {
     type     = "ssh"
     user     = "adminuser"
-    private_key = file("/home/student/.ssh/id_rsa")
+    private_key = file("/home/jenkins/.ssh/id_rsa")
     host     = self.public_ip_address
   }
 }
