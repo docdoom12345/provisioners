@@ -13,7 +13,7 @@ resource "azurerm_linux_virtual_machine" "example" {
   ]
 
   admin_ssh_key {
-    username   = "adminuser"
+    username   = "student"
     public_key = file("/var/lib/jenkins/.ssh/id_rsa.pub")
   }
 
